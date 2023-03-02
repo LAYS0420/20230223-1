@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>哇哈哈</title>
+</head>
+
+ <body>
+    
+ <h1>bmi計算器</h1>
+ <table border="2">
+ 	<tr>
+ 		<th>身高</th>
+ 		<th>體重</th>
+ 	</tr>	
+ 	<tr>
+ 		<td><input type="numder" id="height" name="height" placeholder="公尺"> </td>
+ 		<td><input type="numder" id="weight" name="weight" placeholder="公斤"></td>
+ 	</tr>
+ 	<tr>
+ 		<td></td>
+ 		<td>
+ 			<button id="calculate" onclick="calculate()">計算</button>
+ 		</td>
+ 	</tr>
+ </table>
+
+ <script type="text/javascript">
+ 	function calculate(){
+ 		let height = document.querySelector("#height").value;
+ 		let weight = document.querySelector("#weight").value;
+ 		alert("身高"+height);
+ 		alert("體重"+weight);
+ 		let bmi=weight/(height*height);
+ 		alert("bmi"+bmi);
+ 		if (bmi< 18.5){
+ 			alert("體重過輕");
+ 		} else if (bmi>=18.5&bmi<24) {
+ 			alert("體重適中");
+ 		}else{
+ 			alert("體重異常");
+ 		}
+ 	}
+ </script>
+ <h1>哈哈哈</h1>
+ <table border="2">
+ 	<tr>
+ 		<th>書名</th>
+ 		<th>作者</th>
+ 	</tr>	
+ 	<tr>
+ 		<td>鏈鋸人</td>
+ 		<td>藤本樹</td>
+ 	</tr>
+ </table>
+ 這是我的網頁
+  </body>
